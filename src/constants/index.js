@@ -1,0 +1,1 @@
+export const NAV_DRAWER_OPEN = 'NAV_DRAWER_OPEN';
