@@ -93,14 +93,14 @@ const LeftDrawer = (props) => {
              <MenuItem
               key={1}
               style={styles.menuItem}
-              primaryText="Existing Estimates"
+              primaryText="Form"
               leftIcon={<EventNote color={'#ffffff'}/>}
               containerElement={<Link to={"/formpage"} selected={'/formpage'===pathname} className={props.location.pathname === '/formpage' || null ? 'menu-item' : 'notActive'}/>}
             />
 
       <ListItem
       style={{color:"red"}} 
-      primaryText="New Estimate"
+      primaryText="New Data"
       leftIcon={<NoteAdd color={'#ffffff'}/>}
       style={styles.menuItem}
       disabled	
@@ -108,13 +108,13 @@ const LeftDrawer = (props) => {
       nestedItems={[
         <ListItem
           key={1}
-          primaryText="Price Quote"
+          primaryText="Add Data"
           style={styles.menuItem}
           containerElement={<Link to={"/"} />}  
         />,
         <ListItem
           key={2}
-          primaryText="Quick Quote"
+          primaryText="Edit Data"
           style={styles.menuItem}
           containerElement={<Link to={"/"} />}  
         />
